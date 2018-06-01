@@ -72,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:text="Transfer Items"
+        android:text="Transfer Products"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bt_bg"
         android:layout_marginTop="4dp"
