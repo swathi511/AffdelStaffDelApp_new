@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fti_rview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scrollbarSize="16dp"
+            android:scrollbarStyle="outsideOverlay"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Transfer Itemss"/>
+</LinearLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView android:id="@+id/fti_iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        />
+
+    <View android:id="@+id/fti_vw"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+
+        android:layout_below="@+id/fti_iv_logo"/>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fti_rview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarSize="16dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_above="@+id/fti_bt_transfer"
+        android:layout_below="@+id/fti_vw"/>
+
+    <Button android:id="@+id/fti_bt_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Transfer Items"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bt_bg"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="false"/>
+</RelativeLayout>
